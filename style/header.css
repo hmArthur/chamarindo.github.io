@@ -1,0 +1,458 @@
+.header-father {
+    background-image: linear-gradient(225deg,#e5063a -100%, #ffffff00), linear-gradient(30deg,#E5063A -100%, #ffffff00), url("./../images/header/background.png");
+    height: 100vh;
+    overflow: hidden;
+}
+
+.menu {
+    height: 35%;
+    margin: auto 1.25rem auto 0;
+    display: none;
+}
+.open-menu {
+    position: fixed;
+    width: 100vw;
+    right: 0;
+    top:6rem;
+    padding-bottom: 2rem;
+    z-index: 101;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    background-color: #683A9A;
+    transform: 500ms linear;
+    display: none;
+    animation: menu 0.3s linear;
+}
+
+.open-menu ul {
+    list-style-type: none;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.open-menu li {
+    padding: 0.7rem;
+    width: 100vw;
+}
+
+.open-menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.3rem;
+    text-align: left;
+    font-weight: 600;
+}
+
+.fresa {
+    position: absolute;
+    top: -1rem;
+    left: 0;
+    width: 60vw;
+}
+
+.fogo {
+    position: absolute;
+    bottom: 0vh;
+    right: 0;
+    width: 35vw;
+}
+
+.frust {
+    position: absolute;
+    width: 55vw;
+    max-height: 75vw;
+    bottom: 7rem;
+    right: 0rem;
+    animation: surge 1.5s;
+}
+
+.folhas-1 {
+    position: absolute;
+    max-width: 30%;
+    right:35vw;
+    bottom: 0rem;
+}
+
+.folhas-2 {
+    position: absolute;
+    max-width: 30%;
+    right: 3rem;
+    top: 1.5rem;
+}
+
+.morangos-1 {
+    position: absolute;
+    max-width: 40%;
+    right: 40vw;
+    top: 4rem;
+}
+
+.morangos-2 {
+    position: absolute;
+    max-width: 35;
+    right: 3rem;
+    bottom: 0;
+}
+
+.morangos {
+    animation-delay: 0.5s;
+    animation: surge 2s;
+}
+
+.folhas {
+    animation-delay: 0.5s;
+    animation: balanca 2s normal;
+}
+
+@keyframes surge {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 100%;
+    }
+}
+
+@keyframes menu {
+    from {
+       opacity: 0;
+    } to {
+        opacity: 1;
+    }
+}
+
+@keyframes balanca {
+    from {
+        transform: rotate(50deg);
+        opacity: 0;
+    }
+
+    to {
+        transform: rotate(0deg);
+        opacity: 100%;
+    }
+}
+
+@keyframes cresce {
+    to {
+        transform: scale(1.15);
+    }
+}
+
+
+@keyframes fromleft {
+    from {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0px);
+        opacity: 100%;
+    }
+}
+
+
+
+/* real parts */
+/* nav */
+
+.nav-bar {
+    position: fixed;
+    width: 100vw;
+    height: 6rem;
+    background-color: #0000001d;
+    backdrop-filter: blur(5px);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.logo {
+    margin: auto 0 auto 2rem;
+}
+
+.links {
+    display: flex;
+    height: 100%;
+    margin: auto 0 auto 0;
+    justify-content: center;
+}
+
+.links ul {
+    display: flex;
+    flex-direction:row;
+    list-style-type: none;
+    margin: auto 2rem auto 0;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.links ul li {
+    margin: auto 0.75rem auto 0.75rem;
+    font-weight: 500;
+    transition: 0.2s linear;
+}
+
+.links ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.links ul li:hover {
+    transform: scale(1.1);
+}
+
+
+/*content */
+.header-content {
+    position: relative;
+    z-index: 100;
+    margin: auto 0 auto 3rem;
+    height: 100vh;
+    display: flex;
+    width: 45vw;
+    justify-content: center;
+    flex-direction: column;
+    animation: fromleft 2s;
+
+}
+
+.header-content h1 {
+    max-width: 50vw;
+    color: white;
+    font-weight: 500;
+    font-size: 2.3rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-block-end: 0;
+}
+
+.header-content button {
+    width: 15rem;
+    padding: 0.75rem;
+    margin: 1rem 0 0 0;
+    background-color: #683A9A;
+    outline: none;
+    font-size: 1rem;
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.679);
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: 0.25s linear;
+}
+
+.header-content button:hover {
+    transform: scale(1.1);
+}
+
+@media only screen and (min-width:1200px) {
+    .frust {
+        width: 40vw;
+        right: 3rem;
+        bottom: 4rem;
+    }
+
+    .folhas-1 {
+        max-width: 18%;
+        right: 30vw;
+        bottom: 0;
+    }
+
+    .folhas-2 {
+       width: 17.5%;
+      
+    }
+    
+    .morangos-1 {
+        width: 19%;
+        right: 32vw;
+    }
+    
+    .morangos-2 {
+       width: 13vw;
+        right: 2rem;
+        bottom: 0;
+    }
+
+    .header-content h1 {
+        max-width: 50vw;
+        color: white;
+        font-weight: 500;
+        font-size: 2.6rem;
+    }
+
+    .fresa {
+        top: -1rem;
+        left: 0;
+        max-height: 100vh;
+    }
+}
+
+@media only screen and (min-width:551px) {
+    @media only screen and (max-width: 980px) {
+        .fresa {
+            width: 90vw;
+            max-height: 100vh;
+        }
+
+        .menu {
+            display: initial;
+        }
+
+        .nav-bar .links {
+            display: none;
+        }
+    
+        .folhas-2 {
+          top: 20vh;
+          
+        }
+
+        .morangos-1 {
+            top:18vh;
+            right: 35vw;
+        }
+    }
+}
+/* @media only screen and (min-width:320px) {
+    @media only screen and (max-width:768px) {
+     
+
+        .fresa {
+            width: 70vw;
+        }
+        .frust {
+            width: 60vw;
+        }
+
+        .morangos-1 {
+            max-width: 30%;
+            right: 36vw;
+            top:20vh;
+        }
+
+        .folhas-1 {
+            max-width: 35%;
+            right: 35vw;
+            bottom: 0;
+        }
+
+        .header-content h1 {
+            max-width: 45vw;
+            color: white;
+            font-weight: 500;
+            font-size: 2.5rem;
+        }
+    
+        .folhas-2 {
+            max-width: 30%;
+            top: 20vh;
+        }
+
+        .nav-bar .links {
+            display: none;
+        }
+    }
+} */
+
+
+@media only screen and (min-width:320px) {
+    @media only screen and (max-width:550px) {
+        .header-father {
+            background-image: linear-gradient(225deg,#e5063a -30%, #ffffff00), linear-gradient(30deg,#E5063A -30%, #ffffff00), url("./../images/header/background.png");
+        }
+
+        .menu {
+            display: initial;
+        }
+
+        .logo {
+            height: 60%;
+        }
+
+        @keyframes balanca {
+            from {
+                transform: rotate(0deg);
+                opacity: 0;
+            }
+        
+            to {
+                transform: rotate(-90deg);
+                opacity: 100%;
+            }
+        }
+
+        .nav-bar .links {
+            display: none;
+        }
+        .folhas-1 {
+            max-width: 45%;
+            right: 0;
+            bottom: 0;
+            transform: rotate(-90deg);
+           
+        }
+        .folhas-2 {
+            max-width: 60%;
+            top: 40vh;
+            right: 0%;
+            display: none;
+           
+        }
+        .morangos-1 {
+            max-width: 60%;
+            right: 50vw;
+            top:auto;
+            bottom:1rem;
+        }
+        .morangos-2 {
+            right: 0;
+            display: none;
+        }
+        .header-content {
+            width: 100vw;
+            height: 70vh;
+            margin-left: 0;
+        }
+
+        .header-content h1 {
+            max-width: 90vw;
+           
+            text-align:center;
+            
+            font-size: 1.8rem;
+            margin: 0 auto 0 auto;
+        
+        }
+
+        .header-content button {
+            text-align: center;
+            margin: 1rem auto 0 auto;
+        }
+
+        .fresa {
+            width: 100vw;
+          
+        }
+
+        .frust {
+            width: 90vw;
+            max-height: 85vh;
+            bottom: 3rem;
+            right: 0rem;
+        }
+
+
+        .fogo {
+        
+            width: 45vw;
+        }
+    }
+}
