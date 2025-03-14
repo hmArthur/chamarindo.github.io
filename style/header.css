@@ -440,6 +440,7 @@
 
         .logo {
             height: 50%;
+            margin-left:1.25rem;
         }
 
         @keyframes balanca {
