@@ -11,7 +11,7 @@ document.addEventListener("scroll", () => {
         menu.style.filter = "invert(1)"
     } else {
         nav.classList.remove("sticky")
-        openMenuScroll.style.top = "6rem";
+        openMenuScroll.style.top = "5rem";
          menu.style.filter = "invert(0)"
     }
 })
