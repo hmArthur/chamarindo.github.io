@@ -1,0 +1,36 @@
+.chamoys {
+    background-image:linear-gradient(to right, rgba(0, 0, 0, 0.775), rgba(0, 0, 0, 0)), url(./../images/chamoy/chamoy_background.png);
+    background-size: cover;
+    height: 55vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 20px black;
+}
+
+.chamoys h3 {
+    font-size: 4rem;
+    margin-left: 5rem;
+    color: white;
+    font-weight: 800;
+   
+}
+
+.chamoys h4 {
+    font-size: 4rem;
+    margin: auto 5rem auto auto;
+    color: white;
+    font-weight: 800;
+}
+
+@media only screen and (max-width:768px) {
+    .chamoys {
+       background-position: center;
+       height: 60vh;
+    }
+
+    .chamoys h3 {
+        font-size: 3rem;
+        margin: auto;
+    }
+}

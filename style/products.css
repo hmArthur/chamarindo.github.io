@@ -1,0 +1,124 @@
+.products {
+    width: 100vw;
+    height: 90vh;
+    background-size: cover;
+    background-position: right;
+    display: flex;
+    align-items: center;
+}
+
+.chamoy-p {
+    background-image: url("./../images/chamoy/chamoy-background.svg");
+}
+
+.chamoy-b {
+    background-image: url("./../images/chamoy/background-bebidas.jpg");
+    background-position:bottom;
+}
+
+.slide-container{
+    max-width: 1120px;
+    width: 100%;
+    padding: 40px 0;
+  }
+  .slide-content{
+    margin: 0 40px;
+    overflow: hidden;
+    
+    
+  }
+  .card{
+    
+  }
+  .image-content,
+  .card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  .image-content{
+    position: relative;
+    
+  
+  }
+ 
+  .card-image{
+    position: relative;  
+    padding: 3px;
+    margin: 0.5rem;
+    width: 20rem;
+  }
+
+
+  .card-image .card-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.471);
+  }
+  .name{
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #ffffff;
+    max-width: 15rem;
+  }
+ 
+
+  .swiper-navBtn{
+    color: #fff;
+    background-color: #E5063A;
+    transition: 0.3s linear;
+    padding: 0.6rem;
+    height: 1.5rem;
+    border-radius: 100%;
+   
+  }
+  .swiper-navBtn:hover{
+    transition: 300ms linear;
+    padding: 0.8rem;
+  }
+  .swiper-navBtn::before,
+  .swiper-navBtn::after{
+    font-size: 25px;
+  }
+  .swiper-button-next{
+    right: 0px;
+  }
+  .swiper-button-prev{
+    left: 0px;
+  }
+  .swiper-pagination-bullet{
+    background-color: #D9D9D9;
+    opacity: 1;
+  }
+  .swiper-pagination-bullet-active{
+    background-color: #3E1860;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .slide-content{
+      margin: 0 10px;
+    }
+    .swiper-navBtn{
+      display: none;
+    }
+
+   
+  }
+
+  @media only screen and (min-width:1440px) {
+     .card-image{
+      position: relative;  
+      padding: 3px;
+      margin: 0.5rem;
+      width: 25rem;
+    } 
+
+    .slide-container{
+      max-width: 1440px;
+      width: 95%;
+      padding: 40px 0;
+    }
+  }

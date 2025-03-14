@@ -1,0 +1,93 @@
+.recetas {
+    background-image: linear-gradient(to top, #7f0320 -200%, #F6174E);
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+}
+
+.recetas div {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+   
+}
+
+.recetas div h5 {
+    font-size: 2.3rem;
+    max-width: 15rem;
+    text-align: center;
+    margin-top: 3rem;
+    color: white;
+    font-weight: 800;
+    /* background-color: #DBA517; */
+    padding: 1rem;
+}
+
+.receta-unica {
+    max-width: 20rem;
+}
+
+.receta-unica p {
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+
+}
+
+.recetas div .recetas-content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto;
+}
+
+.receta-unica button {
+    width: 10rem;
+    padding: 0.75rem;
+    margin: 1rem 0 0 0;
+    background-color: #683A9A;
+    outline: none;
+    font-size: 1rem;
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.679);
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: 0.25s linear;
+    border-radius: 35px;
+}
+
+.receta-unica button:hover {
+    transform: scale(1.1);
+    background-color: white;
+    color:#683A9A;
+}
+
+@media only screen and (max-width:980px) {
+    .recetas {
+        height: auto;
+        padding-bottom: 3rem;
+    }
+}
+
+@media only screen and (min-width:1440px) {
+    .recetas div h5 {
+        font-size: 3.5rem;
+    }
+
+    .receta-unica {
+        max-width: 25rem;
+        transform: scale(1.2);
+    }
+}
+
+@media only screen and (min-width:1700px) {
+
+    .receta-unica {
+        max-width: 27.5rem;
+        transform: scale(1.4);
+    }
+}

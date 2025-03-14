@@ -1,5 +1,5 @@
 .header-father {
-    background-image: linear-gradient(225deg,#e5063a -100%, #ffffff00), linear-gradient(30deg,#E5063A -100%, #ffffff00), url("./../images/header/background.png");
+    background-image: linear-gradient(225deg,#e5063a -100%, #ffffff00), linear-gradient(30deg,#E5063A -100%, #ffffff00), url("./../images/header/background.jpg");
     height: 100vh;
     overflow: hidden;
 }
@@ -24,6 +24,7 @@
     display: none;
     animation: menu 0.3s linear;
 }
+
 
 .open-menu ul {
     list-style-type: none;
@@ -150,7 +151,7 @@
         opacity: 0;
     }
 
-    to {
+    70% {
         transform: translateX(0px);
         opacity: 100%;
     }
@@ -168,13 +169,37 @@
     background-color: #0000001d;
     backdrop-filter: blur(5px);
     display: flex;
+    z-index: 1000;
     flex-direction: row;
     justify-content: space-between;
+    transition: 0.5s linear;
     
+}
+
+.sticky {
+    background-color: #f4f2f2f5;
+    height: 5rem;
+    border-bottom: 1px solid rgba(41, 41, 41, 0.537);
+    transition: 0.5s linear;
+}
+
+.sticky .links ul li a {
+    color:black;
+}
+
+@keyframes nav {
+    from {
+
+    }
+    to {
+        background-color: #f1eeeef5;
+        height: 5rem;
+    }
 }
 
 .logo {
     margin: auto 0 auto 2rem;
+    width: 5rem;
 }
 
 .links {
@@ -245,11 +270,14 @@
     color: white;
     text-transform: uppercase;
     font-weight: 600;
+    border-radius: 35px;
     transition: 0.25s linear;
 }
 
 .header-content button:hover {
     transform: scale(1.1);
+    background-color: white;
+    color:#683A9A;
 }
 
 @media only screen and (min-width:1200px) {
@@ -361,6 +389,41 @@
         }
     }
 } */
+
+@media only screen and (min-width:1440px) {
+    .header-content h1 {
+        max-width: 50vw;
+        color: white;
+        font-weight: 500;
+        font-size: 3.5rem;
+        margin-left: auto;
+        margin-right: auto;
+        margin-block-end: 0;
+    }
+
+    .header-content button {
+        width: 22rem;
+        padding: 1.3rem;
+        margin: 1rem 0 0 0;
+        background-color: #683A9A;
+        outline: none;
+        font-size: 2rem;
+    
+    }
+    .links ul li a {
+       font-size: 1.7rem;
+    }
+
+    .logo {
+        width: 8rem;
+    }
+
+    .nav-bar {
+        height: 8rem;
+  
+        
+    }
+}
 
 
 @media only screen and (min-width:320px) {

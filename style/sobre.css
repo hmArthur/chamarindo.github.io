@@ -1,0 +1,116 @@
+.sobre-nos {
+    background-image: linear-gradient(to right, #0f506ad4, #00000000),url("./../images/sobre/sobre-background.svg");
+    background-size: cover;
+    height: 90vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
+    
+}
+
+.sobre-content {
+    width: 65vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto 0 auto 0;
+   
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    @supports (animation-timeline: scroll()) {
+      .sobre-content {
+        animation-delay:1.3s;
+        animation: fromleft 2s;
+        animation-timeline: view();
+        animation-range:normal;
+      }
+    }
+  }
+
+.sobre-content h2 {
+    font-size: 2.3rem;
+    margin-bottom: 1rem;
+    color: white;
+    font-weight: 800;
+    /* background-color: #DBA517; */
+    background-color: #683A9A;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.619);
+    padding: 1rem;
+}
+
+
+.sobre-content p {
+    max-width: 50vw;
+    text-align: justify;
+    font-size: 1.7rem;
+    color: rgb(245, 244, 244);
+    text-indent: 3rem;
+    font-weight: 600;
+    text-shadow: 0 0 0px rgba(0, 0, 0, 0.457);
+}
+
+
+@media only screen and (min-width:1440px) {
+    .sobre-content h2 {
+        font-size: 3.5rem;
+    }
+    
+    .sobre-content p {
+        font-size: 2.5rem;
+    }
+}
+
+.blueberry {
+    width: 35vw;
+    height: fit-content;
+}
+
+@media only screen and (max-width:900px) {
+    .sobre-nos {
+        flex-direction: column;
+       
+    }
+
+    .sobre-content {
+        width: 100vw;
+        align-items: center;
+        padding-top: 3rem;
+    }
+
+    .sobre-content p {
+        max-width: 80vw;
+    }
+
+    .sobre-content h2 {
+        max-width: 70vw;
+      
+    }
+    .blueberry {
+        
+        width: 70vw;
+    }
+}
+
+@media only screen and (max-width:580px) {
+    .sobre-content h2 {
+        font-size: 1.8rem; 
+    }
+
+    .sobre-nos {
+        height: auto;
+    }
+
+    .sobre-content p {
+        font-size: 1.4rem;
+    }
+}
+
+@media only screen and (max-width:400px) {
+    .sobre-content h2 {
+        font-size: 1.5rem; 
+    }
+}
