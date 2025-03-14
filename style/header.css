@@ -13,7 +13,7 @@
     position: fixed;
     width: 100vw;
     right: 0;
-    top:6rem;
+    top:5rem;
     padding-bottom: 2rem;
     z-index: 101;
     display: flex;
@@ -434,10 +434,12 @@
 
         .menu {
             display: initial;
+            height: 30%;
         }
+        
 
         .logo {
-            height: 60%;
+            height: 50%;
         }
 
         @keyframes balanca {
@@ -454,6 +456,10 @@
 
         .nav-bar .links {
             display: none;
+        }
+
+        .nav-bar {
+            height: 5rem;
         }
         .folhas-1 {
             max-width: 45%;
@@ -481,7 +487,7 @@
         }
         .header-content {
             width: 100vw;
-            height: 70vh;
+            height: 60vh;
             display: flex;
             margin-left: 0;
             align-items: center;
@@ -492,7 +498,7 @@
            
             text-align:center;
             
-            font-size: 1.8rem;
+            font-size: 1.5rem;
             margin: 0 auto 0 auto;
         
         }
@@ -509,7 +515,7 @@
 
         .frust {
             width: 90vw;
-            max-height: 85vh;
+            max-height: 55vh;
             bottom: 3rem;
             right: 0rem;
         }
