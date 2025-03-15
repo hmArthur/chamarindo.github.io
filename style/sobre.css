@@ -32,7 +32,7 @@
   }
 
 .sobre-content h2 {
-    font-size: 2.3rem;
+    font-size: 2rem;
     margin-bottom: 1rem;
     color: white;
     font-weight: 800;
@@ -46,7 +46,7 @@
 .sobre-content p {
     max-width: 50vw;
     text-align: justify;
-    font-size: 1.7rem;
+    font-size: 1.4rem;
     color: rgb(245, 244, 244);
     text-indent: 3rem;
     font-weight: 600;
@@ -56,11 +56,11 @@
 
 @media only screen and (min-width:1440px) {
     .sobre-content h2 {
-        font-size: 3.5rem;
+        font-size: 2.7rem;
     }
     
     .sobre-content p {
-        font-size: 2.5rem;
+        font-size: 1.8rem;
     }
 }
 
@@ -97,7 +97,7 @@
 
 @media only screen and (max-width:580px) {
     .sobre-content h2 {
-        font-size: 1.8rem; 
+        font-size: 1.5rem; 
     }
 
     .sobre-nos {
@@ -105,7 +105,7 @@
     }
 
     .sobre-content p {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
 }
 
